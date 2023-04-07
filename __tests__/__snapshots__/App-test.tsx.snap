@@ -1,7 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`examples of some things 1`] = `
-<Text>
-  Hello
-</Text>
+exports[`App is <AddToDO> visible? 1`] = `
+<View>
+  <Text>
+    AddToDo
+  </Text>
+</View>
+`;
+
+exports[`App is <ToDoList> visible? 1`] = `
+<View>
+  <Text>
+    ToDoList
+  </Text>
+</View>
 `;
