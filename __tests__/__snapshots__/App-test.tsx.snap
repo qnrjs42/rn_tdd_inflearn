@@ -55,27 +55,25 @@ exports[`App is <AddToDO> visible? 1`] = `
 `;
 
 exports[`App is <ToDoList> visible? 1`] = `
-<View>
-  <RCTScrollView
-    data={[]}
-    getItem={[Function]}
-    getItemCount={[Function]}
-    keyExtractor={[Function]}
-    onContentSizeChange={[Function]}
-    onLayout={[Function]}
-    onMomentumScrollBegin={[Function]}
-    onMomentumScrollEnd={[Function]}
-    onScroll={[Function]}
-    onScrollBeginDrag={[Function]}
-    onScrollEndDrag={[Function]}
-    removeClippedSubviews={false}
-    renderItem={[Function]}
-    scrollEventThrottle={50}
-    stickyHeaderIndices={[]}
-    testID="todo-list"
-    viewabilityConfigCallbackPairs={[]}
-  >
-    <View />
-  </RCTScrollView>
-</View>
+<RCTScrollView
+  data={[]}
+  getItem={[Function]}
+  getItemCount={[Function]}
+  keyExtractor={[Function]}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  testID="todo-list"
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View />
+</RCTScrollView>
 `;

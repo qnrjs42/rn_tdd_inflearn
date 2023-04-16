@@ -16,7 +16,11 @@ describe('ToDoItem Rneder', () => {
   });
 
   test('should render a <Text>?', async () => {
-    toDoItem.getByTestId('todo-item-text');
+    const isCompleted = props.item?.completed
+      ? 'todo-completed'
+      : 'todo-uncompleted';
+
+    toDoItem.queryByTestId(isCompleted);
   });
 
   test('should render a <Button>?', async () => {

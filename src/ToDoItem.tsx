@@ -20,7 +20,9 @@ const ToDoItem: FC<IProps> = ({
     <View
       testID="todo-item"
       style={item?.completed ? styles.completed : styles.default}>
-      <Text testID="todo-item-text">{item.text}</Text>
+      <Text testID={item?.completed ? 'todo-completed' : 'todo-uncompleted'}>
+        {item.text}
+      </Text>
       <Button
         testID="todo-item-complete-button"
         title="C"

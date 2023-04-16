@@ -18,12 +18,20 @@ const App = () => {
     ]);
   };
 
+  const onCompleted = (index: number) => (): void => {
+    setItems(prev => {
+      const cloneItems = [...prev];
+      cloneItems[index].completed = !cloneItems[index].completed;
+      return cloneItems;
+    });
+  };
+
   return (
     <SafeAreaView>
       <View testID="welcome">
         <Text>ToDo TDD</Text>
         <AddToDo onAdded={onAdd} />
-        <ToDoList items={items} />
+        <ToDoList items={items} onCompleted={onCompleted} />
       </View>
     </SafeAreaView>
   );
