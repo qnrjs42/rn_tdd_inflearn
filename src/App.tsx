@@ -26,12 +26,24 @@ const App = () => {
     });
   };
 
+  const onDeleted = (index: number) => (): void => {
+    setItems(prev => {
+      const cloneItems = [...prev];
+      cloneItems.splice(index, 1);
+      return cloneItems;
+    });
+  };
+
   return (
     <SafeAreaView>
       <View testID="welcome">
         <Text>ToDo TDD</Text>
         <AddToDo onAdded={onAdd} />
-        <ToDoList items={items} onCompleted={onCompleted} />
+        <ToDoList
+          items={items}
+          onCompleted={onCompleted}
+          onDeleted={onDeleted}
+        />
       </View>
     </SafeAreaView>
   );

@@ -39,4 +39,22 @@ describe('Example', () => {
       ),
     ).toBeVisible();
   });
+
+  it('Deleting ToDo Item should work!', async () => {
+    const text = 'a new ToDo Item';
+
+    await element(by.id('add-todo-input')).tap(); // 키보드 활성화
+    await element(by.id('add-todo-input')).typeText(text);
+    await element(by.id('add-todo-button')).tap();
+
+    await element(by.id('todo-item-delete-button')).multiTap(5); // tap 이벤트가 막히는 현상이 있어서 multiTap 으로 변경
+    await expect(
+      element(
+        by
+          .id('todo-uncompleted')
+          .and(by.text(text))
+          .withAncestor(by.id('todo-list')),
+      ),
+    ).toBeNotVisible();
+  });
 });
