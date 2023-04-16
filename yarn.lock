@@ -1440,6 +1440,13 @@
   dependencies:
     "@babel/types" "^7.3.0"
 
+"@types/detox@^18.1.0":
+  version "18.1.0"
+  resolved "https://registry.yarnpkg.com/@types/detox/-/detox-18.1.0.tgz#5d204f08c8db3a03827f9146b043fc2421327753"
+  integrity sha512-CpR+ziJgDOQhMwTt9fNciZhM9LxqyDRa49DKH0aplcSn26UU2WKSd1Tn1lNBrNCkMD8QNzFg+PYdGRFWrqK3Wg==
+  dependencies:
+    detox "*"
+
 "@types/eslint-visitor-keys@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@types/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#1ee30d79544ca84d68d4b3cdb0af4f205663dd2d"
@@ -2728,6 +2735,46 @@ detect-newline@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/detect-newline/-/detect-newline-3.1.0.tgz#576f5dfc63ae1a192ff192d8ad3af6308991b651"
   integrity sha512-TLz+x/vEXm/Y7P7wn1EJFNLxYpUD4TgMosxY6fAVJUnJMbupHBOncxyWUG9OpTaH9EBD7uFI5LfEgmMOc54DsA==
+
+detox@*:
+  version "20.7.0"
+  resolved "https://registry.yarnpkg.com/detox/-/detox-20.7.0.tgz#2bd6faa1503dbd25ffcbb8e85a35f63193f4be23"
+  integrity sha512-lBS//hl8NbusNx4E2Bucb8UciNPS9HhW1ejUIiEDgYuGQnuM33GcyQ6I4wXi4YUdrDYO2obpwxe/qLUg9DkVng==
+  dependencies:
+    ajv "^8.6.3"
+    bunyan "^1.8.12"
+    bunyan-debug-stream "^3.1.0"
+    caf "^15.0.1"
+    chalk "^4.0.0"
+    child-process-promise "^2.2.0"
+    execa "^5.1.1"
+    find-up "^4.1.0"
+    fs-extra "^4.0.2"
+    funpermaproxy "^1.1.0"
+    glob "^8.0.3"
+    ini "^1.3.4"
+    json-cycle "^1.3.0"
+    lodash "^4.17.11"
+    multi-sort-stream "^1.0.3"
+    multipipe "^4.0.0"
+    node-ipc "^9.2.1"
+    proper-lockfile "^3.0.2"
+    resolve-from "^5.0.0"
+    sanitize-filename "^1.6.1"
+    semver "^7.0.0"
+    serialize-error "^8.0.1"
+    shell-quote "^1.7.2"
+    signal-exit "^3.0.3"
+    stream-json "^1.7.4"
+    strip-ansi "^6.0.1"
+    telnet-client "1.2.8"
+    tempfile "^2.0.0"
+    trace-event-lib "^1.3.1"
+    which "^1.3.1"
+    ws "^7.0.0"
+    yargs "^16.0.3"
+    yargs-parser "^20.2.9"
+    yargs-unparser "^2.0.0"
 
 detox@^20.6.0:
   version "20.6.0"
