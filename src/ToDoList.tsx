@@ -4,10 +4,10 @@ import {View, FlatList} from 'react-native';
 interface IProps {
   items?: any[];
 }
-const ToDoList: FC<IProps> = ({items}: IProps) => {
+const ToDoList: FC<IProps> = ({items = []}: IProps) => {
   return (
     <View>
-      <FlatList testID="todo-list" data={items || []} />
+      <FlatList testID="todo-list" data={items} />
     </View>
   );
 };

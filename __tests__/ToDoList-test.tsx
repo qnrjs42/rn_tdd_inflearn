@@ -27,7 +27,7 @@ describe('ToDoList Rneder', () => {
     toDoList.getByTestId('todo-list');
   });
 
-  test('should pass props to FlatList', async () => {
+  test('should pass props to <FlatList />', async () => {
     const flatListData = toDoList.getByTestId('todo-list').props.data;
     expect(flatListData).toEqual(props.items);
   });
