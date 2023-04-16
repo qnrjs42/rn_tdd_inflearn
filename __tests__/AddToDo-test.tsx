@@ -1,10 +1,10 @@
 import React from 'react';
-import {fireEvent, render} from '@testing-library/react-native';
+import {fireEvent, render, type RenderAPI} from '@testing-library/react-native';
 
 import AddToDO from '../src/AddToDo';
 
 describe('AddToDO Rneder', () => {
-  let addToDo: any;
+  let addToDo: RenderAPI;
   beforeEach(() => {
     addToDo = render(<AddToDO />);
   });
@@ -21,7 +21,7 @@ describe('AddToDO Rneder', () => {
 });
 
 describe('AddToDo Intereaction', () => {
-  let addToDo: any;
+  let addToDo: RenderAPI;
   let props: {
     onAdded: jest.Mock;
   };

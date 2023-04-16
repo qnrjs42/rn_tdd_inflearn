@@ -1,10 +1,13 @@
-import {View, Text} from 'react-native';
 import React, {FC} from 'react';
+import {View, FlatList} from 'react-native';
 
-const ToDoList: FC = () => {
+interface IProps {
+  items?: any[];
+}
+const ToDoList: FC<IProps> = ({items}: IProps) => {
   return (
     <View>
-      <Text>ToDoList</Text>
+      <FlatList testID="todo-list" data={items || []} />
     </View>
   );
 };
