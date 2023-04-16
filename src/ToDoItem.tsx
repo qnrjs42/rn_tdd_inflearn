@@ -3,6 +3,7 @@ import {View, Text, Button, StyleSheet} from 'react-native';
 
 interface IProps {
   item: {
+    text: string;
     completed: boolean;
   };
   index?: number;
@@ -19,7 +20,7 @@ const ToDoItem: FC<IProps> = ({
     <View
       testID="todo-item"
       style={item?.completed ? styles.completed : styles.default}>
-      <Text testID="todo-item-text">ToDoItem</Text>
+      <Text testID="todo-item-text">{item.text}</Text>
       <Button
         testID="todo-item-complete-button"
         title="C"
